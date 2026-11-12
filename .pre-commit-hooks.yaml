@@ -1,0 +1,6 @@
+- id: gas-arm-format
+  name: Format GNU ARM/Thumb assembly
+  entry: gas-arm-format
+  language: python
+  types: [text]
+  files: '\.[sS]$'

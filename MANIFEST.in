@@ -1,0 +1,2 @@
+include .pre-commit-hooks.yaml
+recursive-include tests *.s *.S

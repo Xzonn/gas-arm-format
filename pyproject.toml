@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gas-arm-format"
+version = "0.1.0"
+description = "A GNU ARM/Thumb assembly formatter for pre-commit"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["Pygments>=2.18,<3", "pygments-arm==0.7.5"]
+
+[project.urls]
+Repository = "https://github.com/Xzonn/gas-arm-format"
+
+[project.scripts]
+gas-arm-format = "gas_arm_format:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pre-commit>=3", "build>=1"]
+
+[tool.setuptools]
+py-modules = ["gas_arm_format"]
